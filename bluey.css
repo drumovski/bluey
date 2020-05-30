@@ -1,0 +1,837 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .bluey {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+body .bluey .main-body {
+  background-color: #85c7f9;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  top: -190px;
+  left: -100px;
+  border: 3px solid #446b88;
+  border-radius: 15% 15% 15% 15% / 10% 8% 9% 12%;
+  overflow: hidden;
+}
+
+body .bluey .main-body .tummy {
+  background-color: #d4ebfd;
+  width: 140px;
+  height: 110px;
+  position: absolute;
+  top: 190px;
+  left: 50px;
+  border-radius: 42% 33% 5% 0% / 36% 55% 12% 12%;
+}
+
+body .bluey .main-body .big-spot1 {
+  background-color: #404066;
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: -30px;
+  left: -61px;
+  border-radius: 57% 43% 50% 50% / 53% 61% 39% 47%;
+}
+
+body .bluey .main-body .big-spot2 {
+  background-color: #404066;
+  width: 140px;
+  height: 120px;
+  position: absolute;
+  top: -18px;
+  left: 146px;
+  border-radius: 45% 55% 50% 50% / 53% 61% 39% 47%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0 73%);
+          clip-path: polygon(0 0, 100% 0, 100% 73%, 0 73%);
+}
+
+body .bluey .main-body .little-spot1 {
+  background-color: #404066;
+  width: 30px;
+  height: 38px;
+  position: absolute;
+  top: 158px;
+  left: -18px;
+  border-radius: 50% 50% 50% 50%;
+}
+
+body .bluey .main-body .little-spot2 {
+  background-color: #404066;
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 216px;
+  left: -13px;
+  border-radius: 50% 50% 50% 50%;
+}
+
+body .bluey .main-body .mouth1 {
+  border: 3px solid #715509;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 134px;
+  left: 84px;
+  border-radius: 50% 50% 50% 50%;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 60% 0, 60% 35%, 0 32%);
+          clip-path: polygon(0 0, 60% 0, 60% 35%, 0 32%);
+}
+
+body .bluey .main-body .mouth2 {
+  border: 3px solid #715509;
+  width: 70px;
+  height: 80px;
+  position: absolute;
+  top: 82px;
+  left: 95px;
+  border-radius: 0% 100% 44% 56% / 51% 100% 0% 49%;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 65%, 45% 53%, 59% 100%, 0 100%);
+          clip-path: polygon(0 65%, 45% 53%, 59% 100%, 0 100%);
+}
+
+body .bluey .main-body .eye1 {
+  background-color: white;
+  width: 61px;
+  height: 85px;
+  position: absolute;
+  top: 26px;
+  left: 63px;
+  border: 3px solid black;
+  border-radius: 59% 37% 42% 51% / 49% 43% 45% 45%;
+}
+
+body .bluey .main-body .eye1 .pupil1 {
+  background-color: black;
+  width: 18px;
+  height: 32px;
+  position: absolute;
+  top: 25px;
+  left: 23px;
+  border-radius: 52% 45% 42% 51% / 49% 43% 45% 45%;
+}
+
+body .bluey .main-body .eye2 {
+  background-color: white;
+  width: 48px;
+  height: 85px;
+  position: absolute;
+  top: 26px;
+  left: 140px;
+  border: 3px solid black;
+  border-radius: 45% 55% 50% 51% / 49% 43% 45% 45%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 48%, 0 48%);
+          clip-path: polygon(0 0, 100% 0, 100% 48%, 0 48%);
+}
+
+body .bluey .main-body .eye2 .pupil2 {
+  background-color: black;
+  width: 16px;
+  height: 35px;
+  position: absolute;
+  top: 23px;
+  left: 13px;
+  border-radius: 52% 45% 42% 51% / 49% 43% 45% 45%;
+}
+
+body .bluey .main-body .snout-outline1 {
+  width: 33.5px;
+  height: 10px;
+  border-top: 3px solid #495e70;
+  position: absolute;
+  top: 70px;
+  left: 138px;
+  z-index: 2;
+}
+
+body .bluey .main-body .snout-outline2 {
+  width: 16px;
+  height: 10px;
+  border-top: 3px solid #96abbb;
+  position: absolute;
+  top: 70px;
+  left: 173px;
+  z-index: 2;
+}
+
+body .bluey .main-body .snout-blue-strip1 {
+  border-radius: 65% 1% 77% 19% / 50% 0% 72% 38%;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  top: 117px;
+  left: 79px;
+  border: 6.5px solid #d6e9f7;
+  z-index: 1;
+  -webkit-clip-path: polygon(76% 53%, 26% 86%, 40% 100%, 0 100%, 0 0);
+          clip-path: polygon(76% 53%, 26% 86%, 40% 100%, 0 100%, 0 0);
+}
+
+body .bluey .main-body .snout-blue-strip2 {
+  border-radius: 19% 17% 77% 0% / 50% 11% 58% 25%;
+  width: 110px;
+  height: 80px;
+  position: absolute;
+  top: 31px;
+  left: 39px;
+  border: 10px solid #d6e9f7;
+  z-index: 1;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-clip-path: polygon(87% 55%, 96% 0, 100% 0, 100% 100%, 59% 100%, 80% 70%);
+          clip-path: polygon(87% 55%, 96% 0, 100% 0, 100% 100%, 59% 100%, 80% 70%);
+}
+
+body .bluey .main-body .snout-blue-strip3 {
+  border-radius: 31% 69% 51% 49% / 30% 51% 49% 70%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 68px;
+  left: 165px;
+  border: 10px solid #d6e9f7;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 0 45%, 31% 0);
+          clip-path: polygon(0 0, 0 45%, 31% 0);
+}
+
+body .bluey .tummy-bottom {
+  background-color: #d4ebfd;
+  width: 167px;
+  height: 25px;
+  position: absolute;
+  top: 93px;
+  left: -79px;
+  border: 3px solid #80a2bd;
+  border-radius: 16% 20% 49% 48% / 40% 45% 55% 59%;
+  -webkit-clip-path: polygon(72% 57%, 100% 51%, 100% 100%, 16% 100%, 15% 57%);
+          clip-path: polygon(72% 57%, 100% 51%, 100% 100%, 16% 100%, 15% 57%);
+}
+
+body .bluey .background-snout1 {
+  background-color: #eccc75;
+  width: 60px;
+  height: 85px;
+  position: absolute;
+  top: -110px;
+  left: 69px;
+  border-radius: 43% 25% 27% 50% / 38% 46% 46% 41%;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+  border-right: 3px solid #715509;
+  border-bottom: 3px solid #715509;
+}
+
+body .bluey .background-snout2 {
+  background-color: #eccc75;
+  width: 139px;
+  height: 95px;
+  position: absolute;
+  top: -117px;
+  left: -21px;
+  border-radius: 0% 14% 13% 24% / 54% 24% 23% 37%;
+  border-bottom-color: #715509;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  -webkit-clip-path: polygon(1% 100%, 1% 83%, 4% 68%, 42% 55%, 69% 21%, 78% 0, 93% 0, 100% 67%, 86% 84%, 100% 100%);
+          clip-path: polygon(1% 100%, 1% 83%, 4% 68%, 42% 55%, 69% 21%, 78% 0, 93% 0, 100% 67%, 86% 84%, 100% 100%);
+}
+
+body .bluey .nose-left {
+  background-color: #2a2b3f;
+  border-radius: 29% 69% 69% 29% / 33% 48% 47% 32%;
+  width: 20px;
+  height: 55px;
+  position: absolute;
+  top: -122px;
+  left: 100px;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  border-left-color: #0e0302;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+body .bluey .nose-top {
+  background-color: #2a2b3f;
+  border-radius: 29% 69% 69% 29% / 33% 48% 47% 32%;
+  width: 19px;
+  height: 55px;
+  position: absolute;
+  top: -136px;
+  left: 108px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-left-color: #0e0302;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+body .bluey .nose-right {
+  background-color: #2a2b3f;
+  border-radius: 29% 69% 69% 29% / 33% 48% 47% 32%;
+  width: 25px;
+  height: 51px;
+  position: absolute;
+  top: -120px;
+  left: 113px;
+  -webkit-transform: rotate(-152deg);
+          transform: rotate(-152deg);
+  border-left-color: #0e0302;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+body .bluey .nose-shine {
+  background-color: #92929e;
+  width: 27px;
+  height: 10px;
+  position: absolute;
+  z-index: 3;
+  top: -115px;
+  left: 115px;
+  border-radius: 35% 35% 37% 34% / 38% 37% 45% 43%;
+}
+
+body .bluey .ear1-left {
+  width: 140px;
+  height: 20px;
+  background-color: #404062;
+  top: -235px;
+  left: -119px;
+  position: absolute;
+  border-radius: 13% 11% 82% 12% / 33% 15% 82% 0%;
+  border-top: 3px solid black;
+  -webkit-transform: rotate(-52deg);
+          transform: rotate(-52deg);
+  z-index: -1;
+}
+
+body .bluey .ear1-right {
+  width: 20px;
+  height: 120px;
+  background-color: #404062;
+  top: -285px;
+  left: -32px;
+  position: absolute;
+  border-radius: 93% 7% 25% 40% / 84% 7% 60% 0%;
+  border: 3px solid black;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  z-index: -2;
+}
+
+body .bluey .ear1-inner {
+  width: 100px;
+  height: 100px;
+  background-color: #edcc75;
+  top: -245px;
+  left: -52px;
+  position: absolute;
+  border-radius: 10% 0% 0% 0% / 94% 0% 0% 0%;
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
+  z-index: -1;
+  -webkit-clip-path: polygon(0 17%, 7% 15%, 67% 100%, 0% 100%);
+          clip-path: polygon(0 17%, 7% 15%, 67% 100%, 0% 100%);
+}
+
+body .bluey .ear2-left {
+  width: 140px;
+  height: 20px;
+  background-color: #404062;
+  top: -235px;
+  left: -12px;
+  position: absolute;
+  border-radius: 13% 11% 82% 12% / 33% 15% 82% 0%;
+  border-top: 3px solid black;
+  -webkit-transform: rotate(-52deg);
+          transform: rotate(-52deg);
+  z-index: -1;
+}
+
+body .bluey .ear2-right {
+  width: 20px;
+  height: 120px;
+  background-color: #404062;
+  top: -285px;
+  left: 75px;
+  position: absolute;
+  border-radius: 93% 7% 25% 40% / 84% 7% 60% 0%;
+  border: 3px solid black;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  z-index: -2;
+}
+
+body .bluey .ear2-inner {
+  width: 100px;
+  height: 100px;
+  background-color: #edcc75;
+  top: -245px;
+  left: 55px;
+  position: absolute;
+  border-radius: 10% 0% 0% 0% / 94% 0% 0% 0%;
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
+  z-index: -1;
+  -webkit-clip-path: polygon(0 17%, 7% 15%, 67% 100%, 0% 100%);
+          clip-path: polygon(0 17%, 7% 15%, 67% 100%, 0% 100%);
+}
+
+body .bluey .eyebrow-l1 {
+  background-color: #d2ecfd;
+  width: 45px;
+  height: 23px;
+  position: absolute;
+  top: -203px;
+  left: -35px;
+  border: 3px solid #81a3bb;
+  border-radius: 52% 47% 27% 26% / 61% 62% 35% 34%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+body .bluey .eyebrow-l2 {
+  background-color: #d2ecfd;
+  width: 45px;
+  height: 23px;
+  position: absolute;
+  top: -209px;
+  left: -22px;
+  border: 3px solid #81a3bb;
+  border-radius: 52% 47% 27% 26% / 61% 62% 35% 34%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+body .bluey .eyebrow-l-inner {
+  background-color: #d2ecfd;
+  width: 43px;
+  height: 23px;
+  position: absolute;
+  top: -202px;
+  left: -28px;
+  border-radius: 52% 47% 27% 26% / 61% 62% 35% 34%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+body .bluey .eyebrow-r1 {
+  background-color: #d2ecfd;
+  width: 45px;
+  height: 23px;
+  position: absolute;
+  top: -203px;
+  left: 61px;
+  border: 3px solid #81a3bb;
+  border-radius: 52% 47% 27% 26% / 61% 62% 35% 34%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+body .bluey .eyebrow-r2 {
+  background-color: #d2ecfd;
+  width: 45px;
+  height: 23px;
+  position: absolute;
+  top: -209px;
+  left: 49px;
+  border: 3px solid #81a3bb;
+  border-radius: 52% 47% 27% 26% / 61% 62% 35% 34%;
+  -webkit-transform: rotate(13deg);
+          transform: rotate(13deg);
+}
+
+body .bluey .eyebrow-r-inner {
+  background-color: #d2ecfd;
+  width: 43px;
+  height: 23px;
+  position: absolute;
+  top: -202px;
+  left: 62px;
+  border-radius: 52% 47% 27% 26% / 61% 62% 35% 34%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+body .bluey .arm {
+  background-color: #85c7f9;
+  width: 32px;
+  height: 83px;
+  position: absolute;
+  top: -5px;
+  left: -82px;
+  border-left: 3px solid #406b8e;
+  border-right: 3px solid #406b8e;
+}
+
+body .bluey .armband {
+  background-color: #85c7f9;
+  width: 32px;
+  height: 20px;
+  position: absolute;
+  top: 58px;
+  left: -79px;
+  border-radius: 50% 43% 53% 47% / 78% 75% 8% 10%;
+  z-index: 1;
+}
+
+body .bluey .hand {
+  background-color: #d2ecfd;
+  width: 32px;
+  height: 50px;
+  position: absolute;
+  top: 75px;
+  left: -82px;
+  border-left: 3px solid #88a8bd;
+  border-right: 3px solid #88a8bd;
+}
+
+body .bluey .finger1 {
+  width: 20px;
+  height: 40px;
+  background-color: #d2ecfd;
+  position: absolute;
+  top: 92px;
+  left: -65px;
+  border-right: 3px solid #88a8bd;
+  border-bottom: 3px solid #88a8bd;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  border-radius: 0% 0% 53% 47% / 0% 0% 25% 25%;
+}
+
+body .bluey .finger2 {
+  width: 15px;
+  height: 22px;
+  background-color: #d2ecfd;
+  position: absolute;
+  top: 114px;
+  left: -74px;
+  border-right: 3px solid #88a8bd;
+  border-bottom: 3px solid #88a8bd;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  border-radius: 51% 49% 53% 47% / 56% 57% 43% 44%;
+}
+
+body .bluey .finger3 {
+  width: 15px;
+  height: 19px;
+  background-color: #d2ecfd;
+  position: absolute;
+  top: 108px;
+  left: -86px;
+  border-right: 3px solid #88a8bd;
+  border-bottom: 3px solid #88a8bd;
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+  border-radius: 51% 49% 53% 47% / 56% 57% 43% 44%;
+}
+
+body .bluey .finger4 {
+  width: 10px;
+  height: 10px;
+  background-color: #d2ecfd;
+  position: absolute;
+  top: 103px;
+  left: -85px;
+  border-left: 3px solid #88a8bd;
+  border-radius: 51% 49% 53% 47% / 56% 57% 43% 44%;
+}
+
+body .bluey .leg-l1 {
+  background-color: #85c7f9;
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  top: 108px;
+  left: -65px;
+  border-left: 3px solid #406b8e;
+  border-right: 3px solid #406b8e;
+  z-index: -1;
+}
+
+body .bluey .legband1 {
+  background-color: #85c7f9;
+  width: 45px;
+  height: 10px;
+  position: absolute;
+  top: 169px;
+  left: -62px;
+  border-radius: 50% 43% 53% 47% / 78% 75% 8% 10%;
+  z-index: 1;
+}
+
+body .bluey .leg-l2 {
+  background-color: #d2ecfd;
+  width: 45px;
+  height: 51px;
+  position: absolute;
+  top: 178px;
+  left: -65px;
+  border-left: 3px solid #88a8bd;
+  border-right: 3px solid #88a8bd;
+}
+
+body .bluey .footl {
+  background-color: #d2ecfd;
+  width: 61px;
+  height: 31px;
+  position: absolute;
+  top: 198px;
+  left: -65px;
+  border: 3px solid #88a8bd;
+  border-radius: 0% 34% 53% 47% / 0% 56% 17% 21%;
+  -webkit-clip-path: polygon(27% 18%, 72% 18%, 72% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+          clip-path: polygon(27% 18%, 72% 18%, 72% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+}
+
+body .bluey .toe-l1 {
+  background-color: #d2ecfd;
+  width: 25px;
+  height: 19px;
+  position: absolute;
+  top: 210px;
+  left: -62px;
+  border-right: 3px solid #88a8bd;
+  border-bottom: 3px solid #88a8bd;
+  border-top: 3px solid #88a8bd;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+  border-radius: 0% 40% 53% 47% / 0% 80% 17% 21%;
+  -webkit-clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+          clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+}
+
+body .bluey .toe-l2 {
+  background-color: #d2ecfd;
+  width: 15px;
+  height: 19px;
+  position: absolute;
+  top: 210px;
+  left: -32px;
+  border-right: 3px solid #88a8bd;
+  border-top: 3px solid #88a8bd;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  border-radius: 0% 39% 59% 21% / 0% 76% 12% 0%;
+  -webkit-clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+          clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+}
+
+body .bluey .leg-r1 {
+  background-color: #85c7f9;
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  top: 108px;
+  left: 25px;
+  border-left: 3px solid #406b8e;
+  border-right: 3px solid #406b8e;
+  z-index: -1;
+}
+
+body .bluey .legband2 {
+  background-color: #85c7f9;
+  width: 45px;
+  height: 10px;
+  position: absolute;
+  top: 169px;
+  left: -62px;
+  border-radius: 50% 43% 53% 47% / 78% 75% 8% 10%;
+  z-index: 1;
+}
+
+body .bluey .leg-r2 {
+  background-color: #d2ecfd;
+  width: 45px;
+  height: 51px;
+  position: absolute;
+  top: 178px;
+  left: 25px;
+  border-left: 3px solid #88a8bd;
+  border-right: 3px solid #88a8bd;
+}
+
+body .bluey .footr {
+  background-color: #d2ecfd;
+  width: 61px;
+  height: 31px;
+  position: absolute;
+  top: 198px;
+  left: 25px;
+  border: 3px solid #88a8bd;
+  border-radius: 0% 34% 53% 47% / 0% 56% 17% 21%;
+  -webkit-clip-path: polygon(27% 18%, 72% 18%, 72% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+          clip-path: polygon(27% 18%, 72% 18%, 72% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+}
+
+body .bluey .toe-r1 {
+  background-color: #d2ecfd;
+  width: 25px;
+  height: 19px;
+  position: absolute;
+  top: 210px;
+  left: 29px;
+  border-right: 3px solid #88a8bd;
+  border-bottom: 3px solid #88a8bd;
+  border-top: 3px solid #88a8bd;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+  border-radius: 0% 40% 53% 47% / 0% 80% 17% 21%;
+  -webkit-clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+          clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+}
+
+body .bluey .toe-r2 {
+  background-color: #d2ecfd;
+  width: 15px;
+  height: 19px;
+  position: absolute;
+  top: 210px;
+  left: 57px;
+  border-right: 3px solid #88a8bd;
+  border-top: 3px solid #88a8bd;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  border-radius: 0% 39% 59% 21% / 0% 76% 12% 0%;
+  -webkit-clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+          clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
+}
+
+body .bluey .tail-bottom1 {
+  background-color: #85c7f9;
+  width: 110px;
+  height: 65px;
+  position: absolute;
+  top: 93px;
+  left: -181px;
+  border: 3px solid #406b8e;
+  z-index: -1;
+  border-radius: 41% 20% 50% 50% / 0% 0% 35% 32%;
+  -webkit-transform: rotate(-31deg);
+          transform: rotate(-31deg);
+}
+
+body .bluey .tail-top1 {
+  background-color: white;
+  width: 120px;
+  height: 65px;
+  position: absolute;
+  top: 50px;
+  left: -201px;
+  border-bottom: 3px solid #406b8e;
+  z-index: -1;
+  border-radius: 41% 20% 50% 50% / 0% 0% 35% 32%;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+}
+
+body .bluey .tail-band {
+  background-color: #85c7f9;
+  width: 30px;
+  height: 51px;
+  position: absolute;
+  top: 119px;
+  left: -155px;
+  border-radius: 50% 50% 50% 49% / 50% 9% 11% 50%;
+  z-index: 1;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+body .bluey .tail-end1 {
+  background-color: #404066;
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  top: 117px;
+  left: -212px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-radius: 24% 0% 17% 25% / 39% 0% 35% 37%;
+}
+
+body .bluey .tail-end2 {
+  background-color: #404066;
+  width: 70px;
+  height: 40px;
+  position: absolute;
+  top: 140px;
+  left: -208px;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-radius: 31% 33% 50% 49% / 41% 34% 13% 42%;
+  -webkit-transform: rotate(-14deg);
+          transform: rotate(-14deg);
+}
+
+body .bluey .tail-end-middle {
+  background-color: #404066;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 129px;
+  left: -227px;
+  border-radius: 50% 50% 50% 50%;
+}
+
+body .bluey .tail-fluff1 {
+  background-color: #404066;
+  width: 50px;
+  height: 35px;
+  position: absolute;
+  top: 138px;
+  left: -235px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  border-radius: 56% 17% 8% 53% / 47% 41% 37% 50%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  z-index: -1;
+}
+
+body .bluey .tail-fluff2 {
+  background-color: #404066;
+  width: 35px;
+  height: 20px;
+  position: absolute;
+  top: 126px;
+  left: -242px;
+  border: 3px solid black;
+  border-radius: 42% 33% 0% 46% / 30% 41% 37% 68%;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  z-index: -2;
+}
+
+body .bluey .body-outline {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: -190px;
+  left: -100px;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-radius: 15% 15% 15% 15% / 10% 8% 9% 12%;
+  z-index: 1;
+  -webkit-clip-path: polygon(35% 0, 11% 23%, 100% 7%, 100% 24%, 79% 24%, 46% 88%, 0 88.5%, 0 72.5%, 30% 67%, 0 65.5%, 0 53.5%, 32% 54%, 0 45.5%, 0% 0%);
+          clip-path: polygon(35% 0, 11% 23%, 100% 7%, 100% 24%, 79% 24%, 46% 88%, 0 88.5%, 0 72.5%, 30% 67%, 0 65.5%, 0 53.5%, 32% 54%, 0 45.5%, 0% 0%);
+}
+/*# sourceMappingURL=bluey.css.map */
