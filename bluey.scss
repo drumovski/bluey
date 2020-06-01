@@ -381,7 +381,6 @@ body {
             left: 0px;
             z-index: 1;
 
-
             .eyebrow-l1 {
                 background-color: #d2ecfd;
                 width: 45px;
@@ -452,12 +451,27 @@ body {
                 transform: rotate(25deg);
             }
         }
+
         @keyframes pump {
-            0% {top: 0px} 
-            2% {top: -5px}
-            4% {top: 0px} 
-            6% {top: -5px}
-            8% {top: 0px} 
+            0% {
+                top: 0px
+            }
+
+            2% {
+                top: -5px
+            }
+
+            4% {
+                top: 0px
+            }
+
+            6% {
+                top: -5px
+            }
+
+            8% {
+                top: 0px
+            }
         }
 
         .arm {
