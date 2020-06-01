@@ -687,141 +687,181 @@ body {
             clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
         }
 
-        .tail-bottom1 {
-            background-color: #85c7f9;
-            width: 110px;
-            height: 65px;
+        .tail {
             position: absolute;
-            top: 93px;
-            left: -181px;
-            border: 3px solid #406b8e;
-            z-index: -1;
-            border-radius: 41% 20% 50% 50% / 0% 0% 35% 32%;
-            transform: rotate(-31deg);
+            border: 1px solid green;
+            top: 100px;
+            left: -50px;
+            animation: wag 1s infinite;
+
+            transition-timing-function: ease-in-out;
+            // transform-origin: left bottom;
+            z-index:1;
+
+            .tail-bottom1 {
+                background-color: #85c7f9;
+                width: 110px;
+                height: 65px;
+                position: absolute;
+                top: 93px;
+                left: -181px;
+                border: 3px solid #406b8e;
+                z-index: -1;
+                border-radius: 41% 20% 50% 50% / 0% 0% 35% 32%;
+                transform: rotate(-31deg);
+            }
+
+            .tail-top1 {
+                background-color: white;
+                width: 120px;
+                height: 65px;
+                position: absolute;
+                top: 50px;
+                left: -201px;
+                border-bottom: 3px solid #406b8e;
+                z-index: -1;
+                border-radius: 41% 20% 50% 50% / 0% 0% 35% 32%;
+                transform: rotate(-15deg);
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+            }
+
+            .tail-band {
+                background-color: #85c7f9;
+                width: 30px;
+                height: 51px;
+                position: absolute;
+                top: 119px;
+                left: -155px;
+                border-radius: 50% 50% 50% 49% / 50% 9% 11% 50%;
+                z-index: 1;
+                transform: rotate(-12deg);
+
+
+            }
+
+            .tail-end1 {
+                background-color: #404066;
+                width: 60px;
+                height: 40px;
+                position: absolute;
+                top: 117px;
+                left: -212px;
+                border-top: 3px solid black;
+                border-left: 3px solid black;
+                border-radius: 24% 0% 17% 25% / 39% 0% 35% 37%;
+                // transform: rotate(-5deg);
+            }
+
+            .tail-end2 {
+                background-color: #404066;
+                width: 70px;
+                height: 40px;
+                position: absolute;
+                top: 140px;
+                left: -208px;
+                border-bottom: 3px solid black;
+                border-left: 3px solid black;
+                border-radius: 31% 33% 50% 49% / 41% 34% 13% 42%;
+                transform: rotate(-14deg);
+            }
+
+            .tail-end-middle {
+                background-color: #404066;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 129px;
+                left: -227px;
+                border-radius: 50% 50% 50% 50%;
+                z-index: 1;
+            }
+
+            .tail-fluff1 {
+                background-color: #404066;
+                width: 50px;
+                height: 35px;
+                position: absolute;
+                top: 138px;
+                left: -235px;
+                border-left: 3px solid black;
+                border-bottom: 3px solid black;
+                border-radius: 56% 17% 8% 53% / 47% 41% 37% 50%;
+                transform: rotate(10deg);
+                z-index: -1;
+            }
+
+            .tail-fluff2 {
+                background-color: #404066;
+                width: 35px;
+                height: 20px;
+                position: absolute;
+                top: 126px;
+                left: -242px;
+                border: 3px solid black;
+                border-radius: 42% 33% 0% 46% / 30% 41% 37% 68%;
+            }
+
+            @keyframes wag {
+                
+                0% {
+                    // transform: rotate3d(0,1,.1, 0deg);
+                    transform: rotateY(0, 1, 1 0deg);
+                }
+//   25% {
+                    // transform: rotate3d(0,1,0, 15deg);
+                    // transform: rotateZ(0, 1, 1 0deg);
+                // }
+
+
+                50% {
+                    // transform: rotate3d(0,1,.1, 15deg);
+                     transform: rotateY(30deg);
+                }
+//   75% {
+                    // transform: rotate3d(0,0,.1, 15deg);
+                    // transform: rotateZ(0, 1, 1 0deg);
+                // }
+
+
+
+                100% {
+                    // transform: rotate3d(0,1,.1, 0deg);
+                    transform: rotateZ(0deg);
+                }
+            }
+
+            .body-outline {
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                top: -190px;
+                left: -100px;
+                border-left: 3px solid black;
+                border-top: 3px solid black;
+                border-right: 3px solid black;
+                border-radius: 15% 15% 15% 15% / 10% 8% 9% 12%;
+                z-index: 1;
+                clip-path: polygon(35% 0, 11% 23%, 100% 7%, 100% 24%, 79% 24%, 46% 88%, 0 88.5%, 0 72.5%, 30% 67%, 0 65.5%, 0 53.5%, 32% 54%, 0 45.5%, 0% 0%);
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
-
-        .tail-top1 {
-            background-color: white;
-            width: 120px;
-            height: 65px;
-            position: absolute;
-            top: 50px;
-            left: -201px;
-            border-bottom: 3px solid #406b8e;
-            z-index: -1;
-            border-radius: 41% 20% 50% 50% / 0% 0% 35% 32%;
-            transform: rotate(-15deg);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
-        }
-
-        .tail-band {
-            background-color: #85c7f9;
-            width: 30px;
-            height: 51px;
-            position: absolute;
-            top: 119px;
-            left: -155px;
-            border-radius: 50% 50% 50% 49% / 50% 9% 11% 50%;
-            z-index: 1;
-            transform: rotate(-12deg);
-
-
-        }
-
-        .tail-end1 {
-            background-color: #404066;
-            width: 60px;
-            height: 40px;
-            position: absolute;
-            top: 117px;
-            left: -212px;
-            border-top: 3px solid black;
-            border-left: 3px solid black;
-            border-radius: 24% 0% 17% 25% / 39% 0% 35% 37%;
-            // transform: rotate(-5deg);
-        }
-
-        .tail-end2 {
-            background-color: #404066;
-            width: 70px;
-            height: 40px;
-            position: absolute;
-            top: 140px;
-            left: -208px;
-            border-bottom: 3px solid black;
-            border-left: 3px solid black;
-            border-radius: 31% 33% 50% 49% / 41% 34% 13% 42%;
-            transform: rotate(-14deg);
-        }
-
-        .tail-end-middle {
-            background-color: #404066;
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            top: 129px;
-            left: -227px;
-            border-radius: 50% 50% 50% 50%;
-        }
-
-        .tail-fluff1 {
-            background-color: #404066;
-            width: 50px;
-            height: 35px;
-            position: absolute;
-            top: 138px;
-            left: -235px;
-            border-left: 3px solid black;
-            border-bottom: 3px solid black;
-            border-radius: 56% 17% 8% 53% / 47% 41% 37% 50%;
-            transform: rotate(10deg);
-            z-index: -1;
-        }
-
-        .tail-fluff2 {
-            background-color: #404066;
-            width: 35px;
-            height: 20px;
-            position: absolute;
-            top: 126px;
-            left: -242px;
-            border: 3px solid black;
-            border-radius: 42% 33% 0% 46% / 30% 41% 37% 68%;
-            transform: rotate(-2deg);
-            z-index: -2;
-        }
-
-        .body-outline {
-            width: 200px;
-            height: 300px;
-            position: absolute;
-            top: -190px;
-            left: -100px;
-            border-left: 3px solid black;
-            border-top: 3px solid black;
-            border-right: 3px solid black;
-            border-radius: 15% 15% 15% 15% / 10% 8% 9% 12%;
-            z-index: 1;
-            clip-path: polygon(35% 0, 11% 23%, 100% 7%, 100% 24%, 79% 24%, 46% 88%, 0 88.5%, 0 72.5%, 30% 67%, 0 65.5%, 0 53.5%, 32% 54%, 0 45.5%, 0% 0%);
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
     }
-
-
-
-}
+} 

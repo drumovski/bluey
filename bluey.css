@@ -712,7 +712,19 @@ body .bluey .toe-r2 {
           clip-path: polygon(27% 18%, 62% 18%, 62% 0, 100% 0, 100% 64%, 100% 100%, 0 100%, 0 18%);
 }
 
-body .bluey .tail-bottom1 {
+body .bluey .tail {
+  position: absolute;
+  border: 1px solid green;
+  top: 100px;
+  left: -50px;
+  -webkit-animation: wag 1s infinite;
+          animation: wag 1s infinite;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+body .bluey .tail .tail-bottom1 {
   background-color: #85c7f9;
   width: 110px;
   height: 65px;
@@ -726,7 +738,7 @@ body .bluey .tail-bottom1 {
           transform: rotate(-31deg);
 }
 
-body .bluey .tail-top1 {
+body .bluey .tail .tail-top1 {
   background-color: white;
   width: 120px;
   height: 65px;
@@ -742,7 +754,7 @@ body .bluey .tail-top1 {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
 }
 
-body .bluey .tail-band {
+body .bluey .tail .tail-band {
   background-color: #85c7f9;
   width: 30px;
   height: 51px;
@@ -755,7 +767,7 @@ body .bluey .tail-band {
           transform: rotate(-12deg);
 }
 
-body .bluey .tail-end1 {
+body .bluey .tail .tail-end1 {
   background-color: #404066;
   width: 60px;
   height: 40px;
@@ -767,7 +779,7 @@ body .bluey .tail-end1 {
   border-radius: 24% 0% 17% 25% / 39% 0% 35% 37%;
 }
 
-body .bluey .tail-end2 {
+body .bluey .tail .tail-end2 {
   background-color: #404066;
   width: 70px;
   height: 40px;
@@ -781,7 +793,7 @@ body .bluey .tail-end2 {
           transform: rotate(-14deg);
 }
 
-body .bluey .tail-end-middle {
+body .bluey .tail .tail-end-middle {
   background-color: #404066;
   width: 40px;
   height: 40px;
@@ -789,9 +801,10 @@ body .bluey .tail-end-middle {
   top: 129px;
   left: -227px;
   border-radius: 50% 50% 50% 50%;
+  z-index: 1;
 }
 
-body .bluey .tail-fluff1 {
+body .bluey .tail .tail-fluff1 {
   background-color: #404066;
   width: 50px;
   height: 35px;
@@ -806,7 +819,7 @@ body .bluey .tail-fluff1 {
   z-index: -1;
 }
 
-body .bluey .tail-fluff2 {
+body .bluey .tail .tail-fluff2 {
   background-color: #404066;
   width: 35px;
   height: 20px;
@@ -815,12 +828,39 @@ body .bluey .tail-fluff2 {
   left: -242px;
   border: 3px solid black;
   border-radius: 42% 33% 0% 46% / 30% 41% 37% 68%;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
-  z-index: -2;
 }
 
-body .bluey .body-outline {
+@-webkit-keyframes wag {
+  0% {
+    -webkit-transform: rotateY(0, 1, 1 0deg);
+            transform: rotateY(0, 1, 1 0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes wag {
+  0% {
+    -webkit-transform: rotateY(0, 1, 1 0deg);
+            transform: rotateY(0, 1, 1 0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+body .bluey .tail .body-outline {
   width: 200px;
   height: 300px;
   position: absolute;
