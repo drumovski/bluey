@@ -390,7 +390,16 @@ body .bluey .ear2-inner {
           clip-path: polygon(0 17%, 7% 15%, 67% 100%, 0% 100%);
 }
 
-body .bluey .eyebrow-l1 {
+body .bluey .eyebrows {
+  -webkit-animation: pump 6s ease-in-out 2s infinite;
+          animation: pump 6s ease-in-out 2s infinite;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+body .bluey .eyebrows .eyebrow-l1 {
   background-color: #d2ecfd;
   width: 45px;
   height: 23px;
@@ -403,7 +412,7 @@ body .bluey .eyebrow-l1 {
           transform: rotate(-30deg);
 }
 
-body .bluey .eyebrow-l2 {
+body .bluey .eyebrows .eyebrow-l2 {
   background-color: #d2ecfd;
   width: 45px;
   height: 23px;
@@ -416,7 +425,7 @@ body .bluey .eyebrow-l2 {
           transform: rotate(-10deg);
 }
 
-body .bluey .eyebrow-l-inner {
+body .bluey .eyebrows .eyebrow-l-inner {
   background-color: #d2ecfd;
   width: 43px;
   height: 23px;
@@ -428,7 +437,7 @@ body .bluey .eyebrow-l-inner {
           transform: rotate(-25deg);
 }
 
-body .bluey .eyebrow-r1 {
+body .bluey .eyebrows .eyebrow-r1 {
   background-color: #d2ecfd;
   width: 45px;
   height: 23px;
@@ -441,7 +450,7 @@ body .bluey .eyebrow-r1 {
           transform: rotate(30deg);
 }
 
-body .bluey .eyebrow-r2 {
+body .bluey .eyebrows .eyebrow-r2 {
   background-color: #d2ecfd;
   width: 45px;
   height: 23px;
@@ -454,7 +463,7 @@ body .bluey .eyebrow-r2 {
           transform: rotate(13deg);
 }
 
-body .bluey .eyebrow-r-inner {
+body .bluey .eyebrows .eyebrow-r-inner {
   background-color: #d2ecfd;
   width: 43px;
   height: 23px;
@@ -464,6 +473,42 @@ body .bluey .eyebrow-r-inner {
   border-radius: 52% 47% 27% 26% / 61% 62% 35% 34%;
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
+}
+
+@-webkit-keyframes pump {
+  0% {
+    top: 0px;
+  }
+  2% {
+    top: -5px;
+  }
+  4% {
+    top: 0px;
+  }
+  6% {
+    top: -5px;
+  }
+  8% {
+    top: 0px;
+  }
+}
+
+@keyframes pump {
+  0% {
+    top: 0px;
+  }
+  2% {
+    top: -5px;
+  }
+  4% {
+    top: 0px;
+  }
+  6% {
+    top: -5px;
+  }
+  8% {
+    top: 0px;
+  }
 }
 
 body .bluey .arm {
@@ -714,14 +759,11 @@ body .bluey .toe-r2 {
 
 body .bluey .tail {
   position: absolute;
-  border: 1px solid green;
   top: 100px;
   left: -50px;
-  -webkit-animation: wag 1s infinite;
-          animation: wag 1s infinite;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  z-index: 1;
+  -webkit-animation: wag .4s ease-in-out infinite;
+          animation: wag .4s ease-in-out infinite;
+  z-index: -1;
 }
 
 body .bluey .tail .tail-bottom1 {
@@ -729,8 +771,8 @@ body .bluey .tail .tail-bottom1 {
   width: 110px;
   height: 65px;
   position: absolute;
-  top: 93px;
-  left: -181px;
+  top: -7px;
+  left: -131px;
   border: 3px solid #406b8e;
   z-index: -1;
   border-radius: 41% 20% 50% 50% / 0% 0% 35% 32%;
@@ -743,8 +785,8 @@ body .bluey .tail .tail-top1 {
   width: 120px;
   height: 65px;
   position: absolute;
-  top: 50px;
-  left: -201px;
+  top: -50px;
+  left: -151px;
   border-bottom: 3px solid #406b8e;
   z-index: -1;
   border-radius: 41% 20% 50% 50% / 0% 0% 35% 32%;
@@ -759,8 +801,8 @@ body .bluey .tail .tail-band {
   width: 30px;
   height: 51px;
   position: absolute;
-  top: 119px;
-  left: -155px;
+  top: 19px;
+  left: -105px;
   border-radius: 50% 50% 50% 49% / 50% 9% 11% 50%;
   z-index: 1;
   -webkit-transform: rotate(-12deg);
@@ -772,8 +814,8 @@ body .bluey .tail .tail-end1 {
   width: 60px;
   height: 40px;
   position: absolute;
-  top: 117px;
-  left: -212px;
+  top: 17px;
+  left: -162px;
   border-top: 3px solid black;
   border-left: 3px solid black;
   border-radius: 24% 0% 17% 25% / 39% 0% 35% 37%;
@@ -784,8 +826,8 @@ body .bluey .tail .tail-end2 {
   width: 70px;
   height: 40px;
   position: absolute;
-  top: 140px;
-  left: -208px;
+  top: 40px;
+  left: -158px;
   border-bottom: 3px solid black;
   border-left: 3px solid black;
   border-radius: 31% 33% 50% 49% / 41% 34% 13% 42%;
@@ -798,8 +840,8 @@ body .bluey .tail .tail-end-middle {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 129px;
-  left: -227px;
+  top: 29px;
+  left: -177px;
   border-radius: 50% 50% 50% 50%;
   z-index: 1;
 }
@@ -809,8 +851,8 @@ body .bluey .tail .tail-fluff1 {
   width: 50px;
   height: 35px;
   position: absolute;
-  top: 138px;
-  left: -235px;
+  top: 38px;
+  left: -185px;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
   border-radius: 56% 17% 8% 53% / 47% 41% 37% 50%;
@@ -824,39 +866,23 @@ body .bluey .tail .tail-fluff2 {
   width: 35px;
   height: 20px;
   position: absolute;
-  top: 126px;
-  left: -242px;
+  top: 26px;
+  left: -192px;
   border: 3px solid black;
   border-radius: 42% 33% 0% 46% / 30% 41% 37% 68%;
 }
 
 @-webkit-keyframes wag {
-  0% {
-    -webkit-transform: rotateY(0, 1, 1 0deg);
-            transform: rotateY(0, 1, 1 0deg);
-  }
   50% {
-    -webkit-transform: rotateY(30deg);
-            transform: rotateY(30deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: rotateY(45deg) rotateZ(10deg);
+            transform: rotateY(45deg) rotateZ(10deg);
   }
 }
 
 @keyframes wag {
-  0% {
-    -webkit-transform: rotateY(0, 1, 1 0deg);
-            transform: rotateY(0, 1, 1 0deg);
-  }
   50% {
-    -webkit-transform: rotateY(30deg);
-            transform: rotateY(30deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: rotateY(45deg) rotateZ(10deg);
+            transform: rotateY(45deg) rotateZ(10deg);
   }
 }
 
